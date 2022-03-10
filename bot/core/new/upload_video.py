@@ -48,7 +48,7 @@ class UploadVideo:
         reply_to_message_id: int = None,
         schedule_date: int = None,
         reply_markup: Union[InlineKeyboardMarkup, ReplyKeyboardMarkup, ReplyKeyboardRemove, ForceReply, None] = None,
-        status_message: str = "📤 Uploading as Video ..."
+        status_message: str = "📤 Uploading as Video🎥 ..."
     ) -> Optional[Message]:
         """
         Advanced Video Uploader Function.
@@ -70,7 +70,7 @@ class UploadVideo:
         :param reply_to_message_id: If the message is a reply, ID of the original message.
         :param schedule_date: Date when the message will be automatically sent. Unix time.
         :param reply_markup: Additional interface options. An object for an inline keyboard, custom reply keyboard, instructions to remove reply keyboard or to force a reply from the user.
-        :param status_message: Pass status string. Default: "📤 Uploading as Video ..."
+        :param status_message: Pass status string. Default: "📤 Uploading as Video🎥..."
         """
 
         duration = duration or (await get_audio_or_video_duration(video))
